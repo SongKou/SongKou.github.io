@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Council of Elrond</title>
+    <link>https://songkou.github.io/</link>
+    <description>Recent content on Council of Elrond</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2021 13:10:30 -0500</lastBuildDate><atom:link href="https://songkou.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MyFirstPost</title>
+      <link>https://songkou.github.io/post/myfirstpost/</link>
+      <pubDate>Sun, 24 Jan 2021 13:10:30 -0500</pubDate>
+      
+      <guid>https://songkou.github.io/post/myfirstpost/</guid>
+      <description>I get this sample from below website: https://stackedit.io/app#
+This website provide a online MD file editer which I can update my blog as fast as possible. it also give some excellent examples for me to quickly understand how to draw diagrams, etc.
+Files StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible offline!
+Create files and folders The file explorer is accessible using the button in left corner of the navigation bar.</description>
+    </item>
+    
+  </channel>
+</rss>
