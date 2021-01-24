@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Council of Elrond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Jan 2021 13:10:30 -0500</lastBuildDate><atom:link href="https://songkou.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jan 2021 14:32:16 -0500</lastBuildDate><atom:link href="https://songkou.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My2ndPost</title>
+      <link>https://songkou.github.io/post/my2ndpost/</link>
+      <pubDate>Sun, 24 Jan 2021 14:32:16 -0500</pubDate>
+      
+      <guid>https://songkou.github.io/post/my2ndpost/</guid>
+      <description>test test test
+ #cost me several hours finally shown up
+detailed steps is shown as below: 1. Update Linux version by using sudo dnf update -y 2. Install git : [ekou@openstackcloud ~]$ sudo dnf install git -y  [ekou@openstackcloud ~]$ git &amp;ndash;version git version 2.27.0
+3. Install brew on linux:  [ekou@openstackcloud ~]$ /bin/bash -c &amp;ldquo;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;quot; ==&amp;gt; This script will install: /home/linuxbrew/.linuxbrew/bin/brew /home/linuxbrew/.linuxbrew/share/doc/homebrew /home/linuxbrew/.linuxbrew/share/man/man1/brew.1 /home/linuxbrew/.linuxbrew/share/zsh/site-functions/_brew /home/linuxbrew/.linuxbrew/etc/bash_completion.d/brew /home/linuxbrew/.linuxbrew/Homebrew</description>
+    </item>
+    
     <item>
       <title>MyFirstPost</title>
       <link>https://songkou.github.io/post/myfirstpost/</link>
