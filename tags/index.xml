@@ -5,6 +5,43 @@
     <link>https://songkou.github.io/tags/</link>
     <description>Recent content in Tags on Council of Elrond</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://songkou.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2021 14:54:02 -0500</lastBuildDate><atom:link href="https://songkou.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>development</title>
+      <link>https://songkou.github.io/tags/development/</link>
+      <pubDate>Sun, 24 Jan 2021 14:54:02 -0500</pubDate>
+      
+      <guid>https://songkou.github.io/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fun</title>
+      <link>https://songkou.github.io/tags/fun/</link>
+      <pubDate>Sun, 24 Jan 2021 14:54:02 -0500</pubDate>
+      
+      <guid>https://songkou.github.io/tags/fun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>https://songkou.github.io/tags/test/</link>
+      <pubDate>Sun, 24 Jan 2021 14:54:02 -0500</pubDate>
+      
+      <guid>https://songkou.github.io/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>https://songkou.github.io/tags/themes/</link>
+      <pubDate>Sun, 24 Jan 2021 14:54:02 -0500</pubDate>
+      
+      <guid>https://songkou.github.io/tags/themes/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
