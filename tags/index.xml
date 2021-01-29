@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Council of Elrond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Jan 2021 14:54:02 -0500</lastBuildDate><atom:link href="https://songkou.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jan 2021 01:18:48 -0500</lastBuildDate><atom:link href="https://songkou.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://songkou.github.io/tags/linux/</link>
+      <pubDate>Fri, 29 Jan 2021 01:18:48 -0500</pubDate>
+      
+      <guid>https://songkou.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualization</title>
+      <link>https://songkou.github.io/tags/virtualization/</link>
+      <pubDate>Fri, 29 Jan 2021 01:18:48 -0500</pubDate>
+      
+      <guid>https://songkou.github.io/tags/virtualization/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>development</title>
       <link>https://songkou.github.io/tags/development/</link>
