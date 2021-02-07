@@ -6,7 +6,19 @@
     <description>Recent content in Linux on Council of Elrond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Jan 2021 01:18:48 -0500</lastBuildDate><atom:link href="https://songkou.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Feb 2021 13:57:32 -0500</lastBuildDate><atom:link href="https://songkou.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mysql_Installation</title>
+      <link>https://songkou.github.io/post/mysql_installation/</link>
+      <pubDate>Sun, 07 Feb 2021 13:57:32 -0500</pubDate>
+      
+      <guid>https://songkou.github.io/post/mysql_installation/</guid>
+      <description>MySQL Installation The general view of the difference between mysql and marinaDB can refer to this link:
+https://blog.panoply.io/a-comparative-vmariadb-vs-mysql
+And I quote some here:
+MySQL: MySQL is an open-source relational database management system (RDBMS). Just like all other relational databases, MySQL uses tables, constraints, triggers, roles, stored procedures and views as the core components that you work with. A table consists of rows, and each row contains a same set of columns.</description>
+    </item>
+    
     <item>
       <title>Linux_Name_Space</title>
       <link>https://songkou.github.io/post/linux_name_space/</link>

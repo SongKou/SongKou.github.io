@@ -6,13 +6,22 @@
     <description>Recent content in Tags on Council of Elrond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Jan 2021 01:18:48 -0500</lastBuildDate><atom:link href="https://songkou.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Feb 2021 13:57:32 -0500</lastBuildDate><atom:link href="https://songkou.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
       <link>https://songkou.github.io/tags/linux/</link>
-      <pubDate>Fri, 29 Jan 2021 01:18:48 -0500</pubDate>
+      <pubDate>Sun, 07 Feb 2021 13:57:32 -0500</pubDate>
       
       <guid>https://songkou.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mysql</title>
+      <link>https://songkou.github.io/tags/mysql/</link>
+      <pubDate>Sun, 07 Feb 2021 13:57:32 -0500</pubDate>
+      
+      <guid>https://songkou.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     
