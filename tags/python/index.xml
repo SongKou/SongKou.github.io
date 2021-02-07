@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mysql on Council of Elrond</title>
-    <link>https://songkou.github.io/tags/mysql/</link>
-    <description>Recent content in Mysql on Council of Elrond</description>
+    <title>Python on Council of Elrond</title>
+    <link>https://songkou.github.io/tags/python/</link>
+    <description>Recent content in Python on Council of Elrond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Feb 2021 14:27:59 -0500</lastBuildDate><atom:link href="https://songkou.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Feb 2021 14:27:59 -0500</lastBuildDate><atom:link href="https://songkou.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python_Mysql</title>
       <link>https://songkou.github.io/post/python_mysql/</link>
@@ -15,18 +15,6 @@
       <guid>https://songkou.github.io/post/python_mysql/</guid>
       <description>Python Query mysql To use Python to query mysql DB. There are two popular modules are used:
  pymysql sqlalchemy ( need to install mysqlconnector in my scenario) pip install mysql-connector-python  pymysql: ekoudb = pymysql.connect(host=&#39;10.10.80.127&#39;, port=3306, user=&#39;ekou&#39;, password=&#39;abcd12334&#39;, database=&#39;ekoutest&#39;) #get cursor cursor = ekoudb.cursor() def insert_a_item(SqlLang): &amp;quot;&amp;quot;&amp;quot; Insert items &amp;quot;&amp;quot;&amp;quot; try: cursor.execute(SqlLang) ekoudb.commit() except Exception as e: print(&#39;Insert data fail&#39;) print(e) ekoudb.rollback() # release resource cursor.close() ekoudb.close() #insert_a_item(SQL_INSERT_A_ITEM) SQL_INSERT_MANY_ITEMS = &amp;quot;INSERT INTO bird_table (origin, hostname,descr,ver,protocol,neighboraddr,neighboras,status,sinceday,sincetime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)&amp;quot; MULTIENTRY = [[&amp;quot;update&amp;quot;,&amp;quot;host1&amp;quot;,&amp;quot;descr1&amp;quot;,&amp;quot;ipv6&amp;quot;,&amp;quot;BGP&amp;quot;,&amp;quot;2123123&amp;quot;,&amp;quot;231233&amp;quot;,&amp;quot;Idle&amp;quot;,&amp;quot;2021-02-02&amp;quot;,&amp;quot;16:50:07&amp;quot;],\ [&amp;quot;update&amp;quot;,&amp;quot;host2&amp;quot;,&amp;quot;descr2&amp;quot;,&amp;quot;ipv6&amp;quot;,&amp;quot;BGP&amp;quot;,&amp;quot;ipv6_addr1&amp;quot;,&amp;quot;65300&amp;quot;,&amp;quot;Idle&amp;quot;,&amp;quot;2021-02-02&amp;quot;,&amp;quot;16:50:07&amp;quot;],\ [&amp;quot;update&amp;quot;,&amp;quot;host3&amp;quot;,&amp;quot;descr3&amp;quot;,&amp;quot;ipv4&amp;quot;,&amp;quot;BGP&amp;quot;,&amp;quot;10.</description>
-    </item>
-    
-    <item>
-      <title>Mysql_Installation</title>
-      <link>https://songkou.github.io/post/mysql_installation/</link>
-      <pubDate>Sun, 07 Feb 2021 13:57:32 -0500</pubDate>
-      
-      <guid>https://songkou.github.io/post/mysql_installation/</guid>
-      <description>MySQL Installation The general view of the difference between mysql and marinaDB can refer to this link:
-https://blog.panoply.io/a-comparative-vmariadb-vs-mysql
-And I quote some here:
-MySQL: MySQL is an open-source relational database management system (RDBMS). Just like all other relational databases, MySQL uses tables, constraints, triggers, roles, stored procedures and views as the core components that you work with. A table consists of rows, and each row contains a same set of columns.</description>
     </item>
     
   </channel>
