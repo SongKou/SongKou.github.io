@@ -2,7 +2,7 @@
 title = 'Python_One_line'
 date = 2021-11-22T22:08:48+08:00
 draft = false
-categories= ['Python']
+categories= ['Automation']
 tags= ['Python']
 +++
 

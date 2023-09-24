@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Council of Elrond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Nov 2021 22:08:48 +0800</lastBuildDate><atom:link href="https://songkou.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Sep 2023 01:31:18 +0800</lastBuildDate><atom:link href="https://songkou.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git_cheat_sheet</title>
+      <link>https://songkou.github.io/posts/git_cheat_sheet/</link>
+      <pubDate>Mon, 25 Sep 2023 01:31:18 +0800</pubDate>
+      
+      <guid>https://songkou.github.io/posts/git_cheat_sheet/</guid>
+      <description>Git cheat sheet Configure Configure system/global level of current repository username, email
+git config --global user.name &amp;quot;Jerry Mouse&amp;quot; git config --global user.email &amp;quot;jerry@yiibai.com&amp;quot;` List git configs
+git config --list git config -l` initialize git init Modify commit git add a.html git commit -m &amp;quot;提交文件a.html&amp;quot; git revert- is about making a new commit that reverts the changes made by other commits.git reset is about updating your branch, moving the tip in order to add or remove commits from the branch.</description>
+    </item>
+    
     <item>
       <title>Python_One_line</title>
       <link>https://songkou.github.io/posts/python_one_line/</link>
