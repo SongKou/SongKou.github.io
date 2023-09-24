@@ -118,5 +118,5 @@ print(re.findall(r'(?<![\d\$\.])\d+', text))
 IPPattern = re.compile('(?<![\.\d])(?:25[0-5]\.|2[0-4]\d\.|[1]\d\d\.|[1-9]\d\.|[1-9]\.)(?:25[0-5]\.|2[0-4]\d\.|[01]?\d\d?\.){2}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)(?![\.\d])')
 ```
 
-![IPv4 Regex test result](https://songkou.github.io/posts/Python_Regex/IPv4_add_regex.jpg)
+![IPv4 Regex test result](https://songkou.github.io/posts/python_regex/IPv4_add_regex.jpg)
 
