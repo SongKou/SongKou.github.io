@@ -1,7 +1,7 @@
 +++
 title = 'Test'
 date = 2023-09-24T12:31:17+08:00
-draft = true
+draft = false
 +++
 test test settings
 
