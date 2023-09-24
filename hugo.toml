@@ -26,3 +26,8 @@ theme = "m10c"
     url = "/tags/"
     weight = 2
     #avatar= "/f/Hugo/EthanBlog/static/static/avatar.jpg"
+
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Council of Elrond</title>
-    <link>https://songkou.github.io/posts/</link>
-    <description>Recent content in Posts on Council of Elrond</description>
+    <title>mysql on Council of Elrond</title>
+    <link>https://songkou.github.io/tags/mysql/</link>
+    <description>Recent content in mysql on Council of Elrond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Feb 2021 18:33:58 +0800</lastBuildDate><atom:link href="https://songkou.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Feb 2021 18:33:58 +0800</lastBuildDate><atom:link href="https://songkou.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mysql_installation</title>
       <link>https://songkou.github.io/posts/mysql_installation/</link>
@@ -27,18 +27,6 @@ MySQL: MySQL is an open-source relational database management system (RDBMS). Ju
       <guid>https://songkou.github.io/posts/python_mysql/</guid>
       <description>Python Query mysql To use Python to query mysql DB. There are two popular modules are used:
 pymysql sqlalchemy ( need to install mysqlconnector in my scenario) pip install mysql-connector-python pymysql: ekoudb = pymysql.connect(host=&amp;#39;10.10.80.127&amp;#39;, port=3306, user=&amp;#39;ekou&amp;#39;, password=&amp;#39;abcd12334&amp;#39;, database=&amp;#39;ekoutest&amp;#39;) #get cursor cursor = ekoudb.cursor() def insert_a_item(SqlLang): &amp;#34;&amp;#34;&amp;#34; Insert items &amp;#34;&amp;#34;&amp;#34; try: cursor.execute(SqlLang) ekoudb.commit() except Exception as e: print(&amp;#39;Insert data fail&amp;#39;) print(e) ekoudb.rollback() # release resource cursor.close() ekoudb.close() #insert_a_item(SQL_INSERT_A_ITEM) SQL_INSERT_MANY_ITEMS = &amp;#34;INSERT INTO bird_table (origin, hostname,descr,ver,protocol,neighboraddr,neighboras,status,sinceday,sincetime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)&amp;#34; MULTIENTRY = [[&amp;#34;update&amp;#34;,&amp;#34;host1&amp;#34;,&amp;#34;descr1&amp;#34;,&amp;#34;ipv6&amp;#34;,&amp;#34;BGP&amp;#34;,&amp;#34;2123123&amp;#34;,&amp;#34;231233&amp;#34;,&amp;#34;Idle&amp;#34;,&amp;#34;2021-02-02&amp;#34;,&amp;#34;16:50:07&amp;#34;],\ [&amp;#34;update&amp;#34;,&amp;#34;host2&amp;#34;,&amp;#34;descr2&amp;#34;,&amp;#34;ipv6&amp;#34;,&amp;#34;BGP&amp;#34;,&amp;#34;ipv6_addr1&amp;#34;,&amp;#34;65300&amp;#34;,&amp;#34;Idle&amp;#34;,&amp;#34;2021-02-02&amp;#34;,&amp;#34;16:50:07&amp;#34;],\ [&amp;#34;update&amp;#34;,&amp;#34;host3&amp;#34;,&amp;#34;descr3&amp;#34;,&amp;#34;ipv4&amp;#34;,&amp;#34;BGP&amp;#34;,&amp;#34;10.</description>
-    </item>
-    
-    <item>
-      <title>Linux_name_space</title>
-      <link>https://songkou.github.io/posts/linux_name_space/</link>
-      <pubDate>Fri, 01 Jan 2021 14:52:01 +0800</pubDate>
-      
-      <guid>https://songkou.github.io/posts/linux_name_space/</guid>
-      <description>Linux NameSpace Docker denpends on Linux NameSpace, Thus this is a brief explaination on linux name space.
-We can use unshare command to manipulate/playaround with linux name spaces.
-How to check what kind of linux namespace is supported We can use “man unshare” to check what kind of linux namespace is supported. There are 8 types of name spaces:
-mount namespace Mounting and unmounting filesystems will not affect the rest of the system (CLONE_NEWNS flag), except for filesystems which are explicitly marked as shared (with mount --make-shared; see /proc/self/mountinfo or findmnt -o+PROPAGATION for the shared flags).</description>
     </item>
     
   </channel>
