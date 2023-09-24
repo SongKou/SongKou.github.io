@@ -6,6 +6,7 @@ categories= ['Python']
 tags= ['Python']
 +++
 
+
 ## Tricks to write Python in one line
 
 ### Get dict output value
@@ -60,6 +61,142 @@ output = [[x.strip() for x in line.split("|")] for line in open("log.txt")]
 print(f"the output is：{output}")
 the output is：[['NXOS2', 'show int status'], [''], ['--------------------------------------------------------------------------------'], ['Port', 'Name', 'Status', 'Vlan', 'Duplex', 'Speed', 'Type'], ['--------------------------------------------------------------------------------'], ['mgmt0', '--', 'connected', 'routed', 'full', '1000', '--'], ['Eth1/1', '--', 'connected', 'routed', 'full', '1000', '10g'], ['Eth1/2', '--', 'connected', '1', 'full', '1000', '10g']]
 
+```
+
+### Get even number in a list and put into a new list
+Traditional Way:
+```
+old_list = [0, 1, 2.1, 3, 4, 6]
+
+new_list = []
+for item in old_list:
+    if item % 2 == 0:
+        new_list.append(item)
+new_list
+[0, 4, 6]
+```
+One line way: 
+
+```
+old_list = [0, 1, 2.1, 3, 4, 6]
+new_list = [item for item in old_list if item % 2 == 0]
+new_list
+[0, 4, 6]
+```
+### duplicate a list:
+
+```
+lists = [10, 20, 30, 45, 55, 60]
+copy_list1 = lists.copy()
+copy_list2 = [item for item in lists]
+copy_list1, copy_list2
+([10, 20, 30, 45, 55, 60], [10, 20, 30, 45, 55, 60])
+```
+### multiply above list:
+```
+lists = [10, 20, 30, 45, 55, 60]
+mult_list1 = [item*5 for item in lists]
+mult_list1
+
+import math
+def simple_function(item):
+    item1 = item*10
+    item2 = item*11
+    return round(math.sqrt(item1**2 + item2**2), 2)
+mult_list2 = [simple_function(item) for item in lists]
+mult_list2
+```
+
+### Remove item from a list:
+```
+lists = [-21, -2, 0, 10, 20, 30, 45, 55, 60]
+del_list = [item for item in lists if item > 0]
+del_list
+
+mor_list = [item for item in lists if(item>0) if(item<50)]
+mor_list
+```
+
+### Recursive list:
+```
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+new_matrix = [[item*2 for item in row] for row in matrix]
+new_matrix
+
+[[2, 4, 6], [8, 10, 12], [14, 16, 18]]
+```
+### Use case in dictionary:
+
+```
+old_student_score_info = {
+    "Jack": {
+        "chinese": 87,
+        "math": 92,
+        "english": 78
+    },
+    "Tom": {
+        "chinese": 92,
+        "math": 100,
+        "english": 89
+    }
+}
+new_student_score_info = {name: scores for name, scores in old_student_score_info.items() if scores["math"] == 100}
+new_student_score_info
+
+{'Tom': {'chinese': 92, 'math': 100, 'english': 89}}
+```
+### Use case in set:
+```
+lists = [-21, -2, 0, 10, 20, 30, 45, 55, 60]
+new_set = {item for item in lists}
+new_set
+
+{-21, -2, 0, 10, 20, 30, 45, 55, 60}
+```
+
+### Change to generator:
+
+new_list = (item for item in lists if item % 2 == 0)
+new_list
+Out[87]: <generator object <genexpr> at 0x000001FFDE2D5080>
+next(new_list)
+Out[88]: -2
+next(new_list)
+Out[89]: 0
+type(new_list)
+Out[90]: generator
+
+### Chinese magic
+```
+print('\n'.join([' '.join(['%2d *%2d = %2d' % (col, row, col * row) for col in range(1, row + 1)]) for row in range(1, 10)]))
+
+ 1 * 1 =  1
+ 1 * 2 =  2  2 * 2 =  4
+ 1 * 3 =  3  2 * 3 =  6  3 * 3 =  9
+ 1 * 4 =  4  2 * 4 =  8  3 * 4 = 12  4 * 4 = 16
+ 1 * 5 =  5  2 * 5 = 10  3 * 5 = 15  4 * 5 = 20  5 * 5 = 25
+ 1 * 6 =  6  2 * 6 = 12  3 * 6 = 18  4 * 6 = 24  5 * 6 = 30  6 * 6 = 36
+ 1 * 7 =  7  2 * 7 = 14  3 * 7 = 21  4 * 7 = 28  5 * 7 = 35  6 * 7 = 42  7 * 7 = 49
+ 1 * 8 =  8  2 * 8 = 16  3 * 8 = 24  4 * 8 = 32  5 * 8 = 40  6 * 8 = 48  7 * 8 = 56  8 * 8 = 64
+ 1 * 9 =  9  2 * 9 = 18  3 * 9 = 27  4 * 9 = 36  5 * 9 = 45  6 * 9 = 54  7 * 9 = 63  8 * 9 = 72  9 * 9 = 81
+```
+
+### Add lambda function:
+
+```
+lists = [-21, -2, 0, 10, 20, 30, 45, 55, 60]
+functions=[lambda x,i=i: x*i for i in lists] #equal to for i in range(1,9) x =x*i
+for function in functions:
+    print(function(3))
+-63
+-6
+0
+30
+60
+90
+135
+165
+180
 ```
 
 ### Here comes a bit difficult one

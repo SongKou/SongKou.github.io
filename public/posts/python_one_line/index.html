@@ -54,7 +54,7 @@
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          28 min read
+          31 min read
         </div>
         <div>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
@@ -103,6 +103,111 @@ Eth1/2    |    --         |        connected | 1       |  full  |  1000  |  10g
 <pre tabindex="0"><code>output = [[x.strip() for x in line.split(&#34;|&#34;)] for line in open(&#34;log.txt&#34;)]
 print(f&#34;the output is：{output}&#34;)
 the output is：[[&#39;NXOS2&#39;, &#39;show int status&#39;], [&#39;&#39;], [&#39;--------------------------------------------------------------------------------&#39;], [&#39;Port&#39;, &#39;Name&#39;, &#39;Status&#39;, &#39;Vlan&#39;, &#39;Duplex&#39;, &#39;Speed&#39;, &#39;Type&#39;], [&#39;--------------------------------------------------------------------------------&#39;], [&#39;mgmt0&#39;, &#39;--&#39;, &#39;connected&#39;, &#39;routed&#39;, &#39;full&#39;, &#39;1000&#39;, &#39;--&#39;], [&#39;Eth1/1&#39;, &#39;--&#39;, &#39;connected&#39;, &#39;routed&#39;, &#39;full&#39;, &#39;1000&#39;, &#39;10g&#39;], [&#39;Eth1/2&#39;, &#39;--&#39;, &#39;connected&#39;, &#39;1&#39;, &#39;full&#39;, &#39;1000&#39;, &#39;10g&#39;]]
+</code></pre><h3 id="get-even-number-in-a-list-and-put-into-a-new-list">Get even number in a list and put into a new list</h3>
+<p>Traditional Way:</p>
+<pre tabindex="0"><code>old_list = [0, 1, 2.1, 3, 4, 6]
+
+new_list = []
+for item in old_list:
+    if item % 2 == 0:
+        new_list.append(item)
+new_list
+[0, 4, 6]
+</code></pre><p>One line way:</p>
+<pre tabindex="0"><code>old_list = [0, 1, 2.1, 3, 4, 6]
+new_list = [item for item in old_list if item % 2 == 0]
+new_list
+[0, 4, 6]
+</code></pre><h3 id="duplicate-a-list">duplicate a list:</h3>
+<pre tabindex="0"><code>lists = [10, 20, 30, 45, 55, 60]
+copy_list1 = lists.copy()
+copy_list2 = [item for item in lists]
+copy_list1, copy_list2
+([10, 20, 30, 45, 55, 60], [10, 20, 30, 45, 55, 60])
+</code></pre><h3 id="multiply-above-list">multiply above list:</h3>
+<pre tabindex="0"><code>lists = [10, 20, 30, 45, 55, 60]
+mult_list1 = [item*5 for item in lists]
+mult_list1
+
+import math
+def simple_function(item):
+    item1 = item*10
+    item2 = item*11
+    return round(math.sqrt(item1**2 + item2**2), 2)
+mult_list2 = [simple_function(item) for item in lists]
+mult_list2
+</code></pre><h3 id="remove-item-from-a-list">Remove item from a list:</h3>
+<pre tabindex="0"><code>lists = [-21, -2, 0, 10, 20, 30, 45, 55, 60]
+del_list = [item for item in lists if item &gt; 0]
+del_list
+
+mor_list = [item for item in lists if(item&gt;0) if(item&lt;50)]
+mor_list
+</code></pre><h3 id="recursive-list">Recursive list:</h3>
+<pre tabindex="0"><code>matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+new_matrix = [[item*2 for item in row] for row in matrix]
+new_matrix
+
+[[2, 4, 6], [8, 10, 12], [14, 16, 18]]
+</code></pre><h3 id="use-case-in-dictionary">Use case in dictionary:</h3>
+<pre tabindex="0"><code>old_student_score_info = {
+    &#34;Jack&#34;: {
+        &#34;chinese&#34;: 87,
+        &#34;math&#34;: 92,
+        &#34;english&#34;: 78
+    },
+    &#34;Tom&#34;: {
+        &#34;chinese&#34;: 92,
+        &#34;math&#34;: 100,
+        &#34;english&#34;: 89
+    }
+}
+new_student_score_info = {name: scores for name, scores in old_student_score_info.items() if scores[&#34;math&#34;] == 100}
+new_student_score_info
+
+{&#39;Tom&#39;: {&#39;chinese&#39;: 92, &#39;math&#39;: 100, &#39;english&#39;: 89}}
+</code></pre><h3 id="use-case-in-set">Use case in set:</h3>
+<pre tabindex="0"><code>lists = [-21, -2, 0, 10, 20, 30, 45, 55, 60]
+new_set = {item for item in lists}
+new_set
+
+{-21, -2, 0, 10, 20, 30, 45, 55, 60}
+</code></pre><h3 id="change-to-generator">Change to generator:</h3>
+<p>new_list = (item for item in lists if item % 2 == 0)
+new_list
+Out[87]: &lt;generator object <!-- raw HTML omitted --> at 0x000001FFDE2D5080&gt;
+next(new_list)
+Out[88]: -2
+next(new_list)
+Out[89]: 0
+type(new_list)
+Out[90]: generator</p>
+<h3 id="chinese-magic">Chinese magic</h3>
+<pre tabindex="0"><code>print(&#39;\n&#39;.join([&#39; &#39;.join([&#39;%2d *%2d = %2d&#39; % (col, row, col * row) for col in range(1, row + 1)]) for row in range(1, 10)]))
+
+ 1 * 1 =  1
+ 1 * 2 =  2  2 * 2 =  4
+ 1 * 3 =  3  2 * 3 =  6  3 * 3 =  9
+ 1 * 4 =  4  2 * 4 =  8  3 * 4 = 12  4 * 4 = 16
+ 1 * 5 =  5  2 * 5 = 10  3 * 5 = 15  4 * 5 = 20  5 * 5 = 25
+ 1 * 6 =  6  2 * 6 = 12  3 * 6 = 18  4 * 6 = 24  5 * 6 = 30  6 * 6 = 36
+ 1 * 7 =  7  2 * 7 = 14  3 * 7 = 21  4 * 7 = 28  5 * 7 = 35  6 * 7 = 42  7 * 7 = 49
+ 1 * 8 =  8  2 * 8 = 16  3 * 8 = 24  4 * 8 = 32  5 * 8 = 40  6 * 8 = 48  7 * 8 = 56  8 * 8 = 64
+ 1 * 9 =  9  2 * 9 = 18  3 * 9 = 27  4 * 9 = 36  5 * 9 = 45  6 * 9 = 54  7 * 9 = 63  8 * 9 = 72  9 * 9 = 81
+</code></pre><h3 id="add-lambda-function">Add lambda function:</h3>
+<pre tabindex="0"><code>lists = [-21, -2, 0, 10, 20, 30, 45, 55, 60]
+functions=[lambda x,i=i: x*i for i in lists] #equal to for i in range(1,9) x =x*i
+for function in functions:
+    print(function(3))
+-63
+-6
+0
+30
+60
+90
+135
+165
+180
 </code></pre><h3 id="here-comes-a-bit-difficult-one">Here comes a bit difficult one</h3>
 <p>Let&rsquo;s say I have a list of string values, I will check the items in this list, if it has a &ldquo;a&rdquo; inside, return a tupe, which is bool value  and the item , eg: (True/False, &lsquo;abc&rsquo;)</p>
 <pre tabindex="0"><code>list_data = [&#34;abc&#34;, &#34;Port&#34;, &#34;Name&#34;, &#34;Status&#34;, &#34;Vlan&#34;, &#34;Duplex&#34;, &#34;Speed&#34;, &#34;Type&#34;, &#34;end&#34;]
