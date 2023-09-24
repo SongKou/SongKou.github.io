@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Council of Elrond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Sep 2021 10:39:22 +0800</lastBuildDate><atom:link href="https://songkou.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Oct 2021 20:59:46 +0800</lastBuildDate><atom:link href="https://songkou.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python_Regex</title>
+      <link>https://songkou.github.io/posts/python_regex/</link>
+      <pubDate>Tue, 12 Oct 2021 20:59:46 +0800</pubDate>
+      
+      <guid>https://songkou.github.io/posts/python_regex/</guid>
+      <description>Some Advanced usage on regex get float number: import re target = &amp;#39;total growth is : 8%-8.5%&amp;#39; rate = re.findall(&amp;#39;(\d+(?:\.\d+)?)&amp;#39;, target) print(rate) [&amp;#39;8&amp;#39;, &amp;#39;8.5&amp;#39;] #\d is any int, + is one to many #(?:...) #A non-capturing group allows you to apply quantifiers to part of your regex but does not capture/assign an ID. #so it means: find int or, if int follows a &amp;#34;.&amp;#34; and any int afterwards, combine the int with &amp;#34;.</description>
+    </item>
+    
     <item>
       <title>Mysql_frequently_used_commands</title>
       <link>https://songkou.github.io/posts/mysql_frequently_used_commands/</link>
