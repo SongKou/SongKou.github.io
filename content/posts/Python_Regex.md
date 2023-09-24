@@ -2,6 +2,8 @@
 title = 'Python_Regex'
 date = 2021-10-12T20:59:46+08:00
 draft = false
+categories= ['Python']
+tags= ['Python','Regex']
 +++
 
 ## Some Advanced usage on regex
