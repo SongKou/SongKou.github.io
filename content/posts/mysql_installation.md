@@ -2,8 +2,8 @@
 title = 'Mysql_installation'
 date = 2021-02-07T18:33:58+08:00
 draft = false
-categories= ['Operating System']
-tags= ['Linux','mysql']
+categories = ['Operating System']
+tags = ['Linux','mysql']
 +++
 The general view of the difference between mysql and marinaDB can refer to this link:
 

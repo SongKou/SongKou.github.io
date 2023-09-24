@@ -2,8 +2,8 @@
 title = 'Mysql_frequently_used_commands'
 date = 2021-09-22T10:39:22+08:00
 draft = false
-categories= ['Database']
-tags= ['mysql']
+categories = ['Database']
+tags = ['mysql']
 +++
 ###Note for frequently used sql commands, just in case forget when long time don't use it
 

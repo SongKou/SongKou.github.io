@@ -2,7 +2,7 @@
 title = 'Python_mysql'
 date = 2021-02-07T13:21:07+08:00
 draft = false
-categories= ['Automation']
+categories = ['Automation']
 tags= ['Python','mysql']
 +++
 
