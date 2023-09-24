@@ -1,0 +1,28 @@
+baseURL = 'https://songkou.github.io/'
+#baseURL = '/'
+languageCode = 'en-us'
+title = 'Council of Elrond'
+#relativeURLs = true
+#canonifyURLs = true
+theme = "m10c"
+
+[params]
+  author= "Song Kou"
+  description = "ignorance more frequently begets confidence than does knowledge"
+  menu_item_separator = " - "
+  #avatar= "static/avatar.jpg"
+#avatar = 'EthanBlog/static/'
+#favicon= "/f/Hugo/EthanBlog/static/avatar.ico"
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+    #avatar= "/f/Hugo/EthanBlog/static/avatar.jpg"
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+    #avatar= "/f/Hugo/EthanBlog/static/static/avatar.jpg"
