@@ -1,5 +1,5 @@
 +++
-title = 'Squid_setup'
+title = 'squid_setup'
 date = 2026-06-18T23:15:45+08:00
 draft = false
 categories = ['Operating System']
