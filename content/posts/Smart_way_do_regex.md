@@ -10,9 +10,10 @@ tags = ['Python','Regex']
 Below is a sample code that I found to get complex regex pattern instead of write it manually
 good example to make smaller parts first the combine to a very complex pattern.
 
-import re
 
 ```python
+
+import re
 
 # convert the {name} test to rules in predefined format in macros
 def regex_expand(macros, pattern, guarded = True):

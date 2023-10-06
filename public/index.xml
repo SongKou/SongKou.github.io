@@ -14,8 +14,7 @@
       
       <guid>https://songkou.github.io/posts/smart_way_do_regex/</guid>
       <description>Below is a sample code that I found to get complex regex pattern instead of write it manually good example to make smaller parts first the combine to a very complex pattern.
-import re
-# convert the {name} test to rules in predefined format in macros def regex_expand(macros, pattern, guarded = True): output = [] pos = 0 size = len(pattern) while pos &amp;lt; size: ch = pattern[pos] if ch == &amp;#39;\\&amp;#39;: output.</description>
+import re # convert the {name} test to rules in predefined format in macros def regex_expand(macros, pattern, guarded = True): output = [] pos = 0 size = len(pattern) while pos &amp;lt; size: ch = pattern[pos] if ch == &amp;#39;\\&amp;#39;: output.</description>
     </item>
     
     <item>
