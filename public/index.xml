@@ -6,7 +6,18 @@
     <description>Recent content on Council of Elrond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Dec 2021 01:31:18 +0800</lastBuildDate><atom:link href="https://songkou.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Oct 2023 23:23:10 +0800</lastBuildDate><atom:link href="https://songkou.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smart Way to do Regex</title>
+      <link>https://songkou.github.io/posts/smart_way_do_regex/</link>
+      <pubDate>Fri, 06 Oct 2023 23:23:10 +0800</pubDate>
+      
+      <guid>https://songkou.github.io/posts/smart_way_do_regex/</guid>
+      <description>Below is a sample code that I found to get complex regex pattern instead of write it manually good example to make smaller parts first the combine to a very complex pattern.
+import re
+# convert the {name} test to rules in predefined format in macros def regex_expand(macros, pattern, guarded = True): output = [] pos = 0 size = len(pattern) while pos &amp;lt; size: ch = pattern[pos] if ch == &amp;#39;\\&amp;#39;: output.</description>
+    </item>
+    
     <item>
       <title>Git_cheat_sheet</title>
       <link>https://songkou.github.io/posts/git_cheat_sheet/</link>
