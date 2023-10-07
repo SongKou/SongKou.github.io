@@ -18,6 +18,16 @@ import re # convert the {name} test to rules in predefined format in macros def 
     </item>
     
     <item>
+      <title>CDN_Notes</title>
+      <link>https://songkou.github.io/posts/cdn_notes/</link>
+      <pubDate>Sat, 08 Jan 2022 02:36:13 +0800</pubDate>
+      
+      <guid>https://songkou.github.io/posts/cdn_notes/</guid>
+      <description>Content Delivery Network Below is all my personal understandings
+Full Name :Content Delivery Network or Content Ddistribute Network Basically, CDN solution solves a common issue: There will always be a bottleneck on the internet, due to different service providers, or geo locations, etc. Which impact the network performance. On the other hand, Latency control is one of the most important indicators nowadays. With CDN, You can deliver a more reliable and stable network by putting certain Servers in certain places in the internet, and building a intelligent network on top of the internet.</description>
+    </item>
+    
+    <item>
       <title>Git_cheat_sheet</title>
       <link>https://songkou.github.io/posts/git_cheat_sheet/</link>
       <pubDate>Sat, 25 Dec 2021 01:31:18 +0800</pubDate>

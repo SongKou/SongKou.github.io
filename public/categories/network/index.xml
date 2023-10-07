@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on Council of Elrond</title>
+    <link>https://songkou.github.io/categories/network/</link>
+    <description>Recent content in Network on Council of Elrond</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 02:36:13 +0800</lastBuildDate><atom:link href="https://songkou.github.io/categories/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CDN_Notes</title>
+      <link>https://songkou.github.io/posts/cdn_notes/</link>
+      <pubDate>Sat, 08 Jan 2022 02:36:13 +0800</pubDate>
+      
+      <guid>https://songkou.github.io/posts/cdn_notes/</guid>
+      <description>Content Delivery Network Below is all my personal understandings
+Full Name :Content Delivery Network or Content Ddistribute Network Basically, CDN solution solves a common issue: There will always be a bottleneck on the internet, due to different service providers, or geo locations, etc. Which impact the network performance. On the other hand, Latency control is one of the most important indicators nowadays. With CDN, You can deliver a more reliable and stable network by putting certain Servers in certain places in the internet, and building a intelligent network on top of the internet.</description>
+    </item>
+    
+  </channel>
+</rss>
