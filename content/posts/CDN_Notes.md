@@ -97,7 +97,7 @@ So you won't have any latency issue. And if the original server goes down, cachi
 Let's use facebook as example:
 When I Open Facebook URL, in F12 in firefox it's shown as below:
 
-![QueryFacebook](%5BQueryFacebook%5D%28https://songkou.github.io/posts/cdn_otes/QueryFacebook.jpg%29)
+![QueryFacebook](https://songkou.github.io/posts/cdn_notes/QueryFacebook.jpg)
 
 
 ### Some DNS related commands
