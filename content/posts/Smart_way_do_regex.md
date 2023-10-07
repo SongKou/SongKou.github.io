@@ -128,3 +128,30 @@ for name in ('url', 'login_name', 'login_pass', 'host', 'port', 'path'):
     print('subgroup:', name, '=', s.group(name))
 
 ```
+
+Output:
+
+```python
+C:\Users\Administrator\AppData\Local\Programs\Python\Python311\python.exe F:\Python_Projects\Regex_Test\Regex_test.py 
+protocol = (?P<protocol>http|https)
+login_name = (?P<login_name>[^:@\r\n\t ]+)
+login_pass = (?P<login_pass>[^@\r\n\t ]+)
+login = (?P<login>(?P<login_name>[^:@\r\n\t ]+)(:(?P<login_pass>[^@\r\n\t ]+))?)
+host = (?P<host>[^:/@\r\n\t ]+)
+port = (?P<port>\d+)
+optional_port = (?P<optional_port>(?:[:](?P<port>\d+))?)
+path = (?P<path>/[^\r\n\t ]*)
+url = (?P<url>(?P<protocol>http|https)://((?P<login>(?P<login_name>[^:@\r\n\t ]+)(:(?P<login_pass>[^@\r\n\t ]+))?)[@])?(?P<host>[^:/@\r\n\t ]+)(?P<optional_port>(?:[:](?P<port>\d+))?)(?P<path>/[^\r\n\t ]*)?)
+
+matched: "https://name:pass@www.test.com:8080/abcdefg"
+
+subgroup: url = https://name:pass@www.test.com:8080/abcdefg
+subgroup: login_name = name
+subgroup: login_pass = pass
+subgroup: host = www.test.com
+subgroup: port = 8080
+subgroup: path = /abcdefg
+
+Process finished with exit code 0
+
+```
