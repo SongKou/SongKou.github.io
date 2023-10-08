@@ -59,7 +59,7 @@ It also have some other benefits, such as:
 
 > CDN Components
 
-![CDN logic workflow](https://songkou.github.io/posts/cdn_notes/CDN_components.png)
+![CDN Component](https://songkou.github.io/posts/cdn_notes/CDN_component.png)
 
 > CDN logic workflow
 
