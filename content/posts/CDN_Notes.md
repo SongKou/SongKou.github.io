@@ -57,7 +57,7 @@ It also have some other benefits, such as:
     - Criteria include and may not limit to: user IP, Content of URL, Server performance, latency.
 5. User get response from cache server, if the cache server doesn't have the requested resource, it will request content from upper layer caching server, until the source server, and pull resource to local.
 
-> CDN Components
+> CDN Component
 
 ![CDN Component](https://songkou.github.io/posts/cdn_notes/CDN_component.png)
 
