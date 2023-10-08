@@ -67,7 +67,7 @@ It also have some other benefits, such as:
 
 > GLSB logic workflow
 > 
-![GLSB workflow](https://songkou.github.io/posts/cdn_notes/CDN.png)
+![GLSB workflow](https://songkou.github.io/posts/cdn_notes/GLSB.png)
 
 ### Summary:
 
