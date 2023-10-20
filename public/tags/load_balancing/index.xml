@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Network on Council of Elrond</title>
-    <link>https://songkou.github.io/categories/network/</link>
-    <description>Recent content in Network on Council of Elrond</description>
+    <title>Load_Balancing on Council of Elrond</title>
+    <link>https://songkou.github.io/tags/load_balancing/</link>
+    <description>Recent content in Load_Balancing on Council of Elrond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Mar 2022 21:29:04 +0800</lastBuildDate><atom:link href="https://songkou.github.io/categories/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Mar 2022 21:29:04 +0800</lastBuildDate><atom:link href="https://songkou.github.io/tags/load_balancing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Load_Balancing</title>
       <link>https://songkou.github.io/posts/load_balancing/</link>
@@ -30,40 +30,6 @@
 （4）加权随机（Weighted Random）：随机地将请求分发到不同的服务器上，从统计学角度看，调度的结果为各台服务器按照权值比重分担用户的连接请求，该算法适用于集群中各服务器性能存在差异的场景。
 （5）基于源 IP 的 Hash（Source IP Hashing）：通过一个 Hash 函数将来自同一个源 IP 地址的请求映射到一台服务器上，该算法适用于需要保证来自同一用户的请求被分发到同一台服务器的场景。
 （6）基于源 IP 端口的 Hash（Source IP and Source Port Hashing）：通过一个 Hash 函数将来自同一个源 IP 地址和源端口号的请求映射到一台服务器上，该算法适用于需要保证来自同一用户同一业务的请求被分发到同一台服务器的场景。</description>
-    </item>
-    
-    <item>
-      <title>Low_Latency_Network_Architecture</title>
-      <link>https://songkou.github.io/posts/low_latency_network_architecture/</link>
-      <pubDate>Thu, 10 Mar 2022 20:04:01 +0800</pubDate>
-      
-      <guid>https://songkou.github.io/posts/low_latency_network_architecture/</guid>
-      <description>exchange trading system General Description of Exchange trading system architecture Below is a very simple example of all the key components of a exchange trading system. Legacy system commonly run o a centralized server to process multiple tasks, and network is holding marketdata, order routing system, Clearing.
-The lower the trading system is, the higher amount of orders it can handle. To me, in terms of the HFT firms, the most important thing is the lower the latency is, the higher chance you get the information and make the deal, which can make you a better advantage vs other trading firms.</description>
-    </item>
-    
-    <item>
-      <title>CDN_Cache_Cluster_communication</title>
-      <link>https://songkou.github.io/posts/cdn_cache_cluster_communication/</link>
-      <pubDate>Sun, 16 Jan 2022 12:29:04 +0800</pubDate>
-      
-      <guid>https://songkou.github.io/posts/cdn_cache_cluster_communication/</guid>
-      <description>4.2 Cache 集群协同交互方法
-Cache 服务器集群内部协同交互的主要目标是在各个服务器节点间建立良好的通信通道，以及时沟通服务器上的内容缓存情况，通过集群中服务器间的协作为用户提供良好的服务体验。
-Cache 服务器集群之间的通信可以分为松散耦合和紧密耦合两大类。其中基于网络消息的松散耦合的 Cache 通信协议包括：ICP、HTCP、Cache Digest、Cache Pre-filling 等，采用特定数据结构管理的紧密耦合的 Cache 通信协议以 CARP 为代表。下面我们对这些通信协议做扼要的介绍，重点说明其工作原理和优缺点，有兴趣的读者可查找相关资料详细了解技术细节。 4.2.1 ICP
-RFC 2186 ICP（Internet Cache Protocol）定义了一种轻量级的消息格式，被用于在 Cache 服务器之间互相查询 Web 资源信息，以确定当前被请求的资源是否存在于其他服务器上。当一台 Cache 服务器向其邻居发出 Web 对象（主要是 URL 信息）查询请求时，接收到查询请求的服务器通过反馈包含了「命中（hit）」或者「失效（miss）」信息的 ICP 应答说明被查询的对象是否保存在自己这里。
-ICP 普遍是基于 UDP 协议实现的，虽然这并不是协议本身的规定。这主要是考虑到 ICP over UDP 的方式更加适合 Web Cache 这类应用，因为一个 ICP 查询的请求和应答必须在非常短的时间内（例如一两秒之内）完成交互，这样才能保证 Cache 服务器能够快速从邻居服务器上获得 Web 对象。如果使用 UDP 协议的请求服务器在接收应答时发现错误，那么可能意味着服务器之间的网络发生了拥塞或者是被断开，而相应的应答服务器也就不再适合被选为请求服务器的邻居。另外，相比较支持可靠传输的 TCP 协议，UDP 协议包的规格更小，也更符合 ICP 轻量级消息格式的要求。当然，除上述这些适用性之外，ICP 也必须考虑 UDP 协议带来的安全问题。
-需要注意的是，ICP 的请求和应答中并不包含与资源相关的 HTTP 头信息，例如访问控制、缓存指示等。因此尽管 Cache 服务器在通过 HTTP 协议获取相关资源前已经查询过了资源的可用性，但是仍旧可能发生 Cache 失效的情况（例如存在于 Cache 服务器上的某些 Web 对象并不允许邻居服务器对它的访问）。</description>
-    </item>
-    
-    <item>
-      <title>CDN_Notes</title>
-      <link>https://songkou.github.io/posts/cdn_notes/</link>
-      <pubDate>Sat, 08 Jan 2022 02:36:13 +0800</pubDate>
-      
-      <guid>https://songkou.github.io/posts/cdn_notes/</guid>
-      <description>Content Delivery Network Below is all my personal understandings
-Full Name :Content Delivery Network or Content Ddistribute Network Basically, CDN solution solves a common issue: There will always be a bottleneck on the internet, due to different service providers, or geo locations, etc. Which impact the network performance. On the other hand, Latency control is one of the most important indicators nowadays. With CDN, You can deliver a more reliable and stable network by putting certain Servers in certain places in the internet, and building a intelligent network on top of the internet.</description>
     </item>
     
   </channel>
