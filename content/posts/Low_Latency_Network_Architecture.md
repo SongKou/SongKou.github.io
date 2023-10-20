@@ -26,16 +26,16 @@ To me, in terms of the HFT firms, the most important thing is the lower the late
 
 The commonly used technics to reduce latecncy is :
 
-    Distributed matching engine system
+- Distributed matching engine system
 
-    Independent Messaging Bus
+- Independent Messaging Bus
 
-    Low Latency Network
+- Low Latency Network
 
 
-1.2 Trading firms system optimization
+#### Trading firms system optimization
 
-1.2.1 Distributed matching engine/system
+##### Distributed matching engine/system
 
 Normally the way to use distributed system is to put different types of product (or subset of products) into different server to do the matching. 
 This is also called  multi matching engine. 
@@ -52,7 +52,7 @@ For trading front system, normally need to make some label in packet header for 
 
 > Normally use L1 FanOut switch that is based on FPGA for out of band dedicated PTP network. Although it will occupy additional NIC port on server, it's worth to do it. NIC normally use SMA interface and OXCO to keep server time precision.
  
-1.2.2 Independent Message Bus Interface
+##### Independent Message Bus Interface
 
 In terms of business model, matching engine acts as a center for market data, Ordering & listing, and Clearing. It would bring some congestions, performance or other potential risks if use these 3 business in the same network. 
 
@@ -76,7 +76,7 @@ Traffic Pattern:
  > Note: There used to use modular switch or router&multicast to do market data distribution, but due to different mechanism to duplicate multicast packet, there is a possibility unequal latency. But use L1 switch Fan Out can guarantee absolute fairness. 
 
  
-1.2.3 Low Latency Network
+##### Low Latency Network
 
 Microburst:
 
@@ -95,11 +95,6 @@ Use low latency switch or increase bandwidth can reduce the latency caused by mi
 Another optimization is on system side, most of the trading applications are based on TCP (reliable). But traditional linux core doesn't do too much optimization on the latency, and many to one TCP incast also increase latency. 
 
 ![TCP Processing](https://songkou.github.io/posts/low_latency_network_architecture/linux_core.jpg)
-
-另一方的优化在系统侧，大量的交易应用程序基于TCP通信，而经典的Linux内核实现也使得TCP通信延迟相对较高，同时伴随着多对一通信模式下的TCP incast带来的延迟。
-Image
-
-业界为了解决这个问题，通常采用如下几种做法：
 
 Common Solution:
 

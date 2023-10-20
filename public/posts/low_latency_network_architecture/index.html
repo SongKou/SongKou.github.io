@@ -83,14 +83,19 @@ To me, in terms of the HFT firms, the most important thing is the lower the late
 <p>HFT latency data is confidential can&rsquo;t find, use above for reference only</p>
 </blockquote>
 <p>The commonly used technics to reduce latecncy is :</p>
-<pre><code>Distributed matching engine system
-
-Independent Messaging Bus
-
-Low Latency Network
-</code></pre>
-<p>1.2 Trading firms system optimization</p>
-<p>1.2.1 Distributed matching engine/system</p>
+<ul>
+<li>
+<p>Distributed matching engine system</p>
+</li>
+<li>
+<p>Independent Messaging Bus</p>
+</li>
+<li>
+<p>Low Latency Network</p>
+</li>
+</ul>
+<h4 id="trading-firms-system-optimization">Trading firms system optimization</h4>
+<h5 id="distributed-matching-enginesystem">Distributed matching engine/system</h5>
 <p>Normally the way to use distributed system is to put different types of product (or subset of products) into different server to do the matching.
 This is also called  multi matching engine.</p>
 <p>However, Distributed matching engine/system bring another issue: Time Consistency.</p>
@@ -101,7 +106,7 @@ This is also called  multi matching engine.</p>
 <blockquote>
 <p>Normally use L1 FanOut switch that is based on FPGA for out of band dedicated PTP network. Although it will occupy additional NIC port on server, it&rsquo;s worth to do it. NIC normally use SMA interface and OXCO to keep server time precision.</p>
 </blockquote>
-<p>1.2.2 Independent Message Bus Interface</p>
+<h5 id="independent-message-bus-interface">Independent Message Bus Interface</h5>
 <p>In terms of business model, matching engine acts as a center for market data, Ordering &amp; listing, and Clearing. It would bring some congestions, performance or other potential risks if use these 3 business in the same network.</p>
 <p>So it&rsquo;s the best to use separate network to handle different types of traffic.</p>
 <p>Benefit of this is:</p>
@@ -120,7 +125,7 @@ This is also called  multi matching engine.</p>
 <blockquote>
 <p>Note: There used to use modular switch or router&amp;multicast to do market data distribution, but due to different mechanism to duplicate multicast packet, there is a possibility unequal latency. But use L1 switch Fan Out can guarantee absolute fairness.</p>
 </blockquote>
-<p>1.2.3 Low Latency Network</p>
+<h5 id="low-latency-network">Low Latency Network</h5>
 <p>Microburst:</p>
 <p>In trading network, there is a very common and obvious pattern which is microburst, if we see traffic in a longer timeslot, traffic per second is very minimal, but if we zoom in to milliseconds, sometimes traffic will hit the maximum.</p>
 <p><img src="https://songkou.github.io/posts/low_latency_network_architecture/microburst.jpg" alt="Microburst"></p>
@@ -134,9 +139,6 @@ This is also called  multi matching engine.</p>
 </blockquote>
 <p>Another optimization is on system side, most of the trading applications are based on TCP (reliable). But traditional linux core doesn&rsquo;t do too much optimization on the latency, and many to one TCP incast also increase latency.</p>
 <p><img src="https://songkou.github.io/posts/low_latency_network_architecture/linux_core.jpg" alt="TCP Processing"></p>
-<p>另一方的优化在系统侧，大量的交易应用程序基于TCP通信，而经典的Linux内核实现也使得TCP通信延迟相对较高，同时伴随着多对一通信模式下的TCP incast带来的延迟。
-Image</p>
-<p>业界为了解决这个问题，通常采用如下几种做法：</p>
 <p>Common Solution:</p>
 <ul>
 <li>Use InfiniBand network to restructure the communication, but due to the potential risk of I&amp;R, and cost, etc, very limited firms use this.</li>
