@@ -27,15 +27,18 @@
     <lastmod>2023-10-06T23:23:10+08:00</lastmod>
   </url><url>
     <loc>https://songkou.github.io/tags/cdn/</loc>
-    <lastmod>2022-03-20T21:29:04+08:00</lastmod>
+    <lastmod>2022-05-16T12:29:04+08:00</lastmod>
+  </url><url>
+    <loc>https://songkou.github.io/posts/cdn_cache_cluster_communication/</loc>
+    <lastmod>2022-05-16T12:29:04+08:00</lastmod>
+  </url><url>
+    <loc>https://songkou.github.io/categories/network/</loc>
+    <lastmod>2022-05-16T12:29:04+08:00</lastmod>
   </url><url>
     <loc>https://songkou.github.io/tags/load_balancing/</loc>
     <lastmod>2022-03-20T21:29:04+08:00</lastmod>
   </url><url>
     <loc>https://songkou.github.io/posts/load_balancing/</loc>
-    <lastmod>2022-03-20T21:29:04+08:00</lastmod>
-  </url><url>
-    <loc>https://songkou.github.io/categories/network/</loc>
     <lastmod>2022-03-20T21:29:04+08:00</lastmod>
   </url><url>
     <loc>https://songkou.github.io/tags/hft/</loc>
@@ -46,9 +49,6 @@
   </url><url>
     <loc>https://songkou.github.io/tags/lowlatency_network/</loc>
     <lastmod>2022-03-10T20:04:01+08:00</lastmod>
-  </url><url>
-    <loc>https://songkou.github.io/posts/cdn_cache_cluster_communication/</loc>
-    <lastmod>2022-01-16T12:29:04+08:00</lastmod>
   </url><url>
     <loc>https://songkou.github.io/posts/cdn_notes/</loc>
     <lastmod>2022-01-08T02:36:13+08:00</lastmod>
