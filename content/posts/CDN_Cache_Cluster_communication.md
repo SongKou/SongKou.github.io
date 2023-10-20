@@ -48,7 +48,7 @@ Cache Pre-filling implements a mechanism to push Cache content, which can be wel
 At present, Cache Pre-filling technology has been implemented in many places, especially in satellite communication scenarios. Its biggest advantage is that it can transmit large-capacity data to multiple distributed ground satellite receivers at high speed at the same time, so that when the network transmission speed is low, Greatly improve the data access experience under high conditions. But in general, Cache Pre-filling currently lacks a unified standard. Relevant manufacturers generally need to develop special equipment to implement this kind of push Cache technology based on actual scenarios, or add related special-purpose equipment to some general Cache equipment. module.
 
 
-4.2.5 CARP
+#### CARP
 
 CARP (Cache Array Routing Protocol) is essentially a distributed caching protocol that divides the URL space of the Cache server cluster by establishing a hash function. The core of CARP is to define a Cache server array member table for the cluster, and a hash function used to distribute cache URL information to the Cache server. CARP provides users with a path to obtain a Web object URL, which is generated through a hash operation based on the name of the server array member and the corresponding URL content, which means that for any specific URL request, it can be accurately known. The required information is stored on which Cache server in the array, regardless of whether this is information that has just been requested and cached before, or information that needs to be delivered and cached when clicked for the first time.
 
