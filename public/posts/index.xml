@@ -18,6 +18,16 @@ import re # convert the {name} test to rules in predefined format in macros def 
     </item>
     
     <item>
+      <title>Load_Balancing</title>
+      <link>https://songkou.github.io/posts/load_balancing/</link>
+      <pubDate>Sun, 20 Aug 2023 21:29:04 +0800</pubDate>
+      
+      <guid>https://songkou.github.io/posts/load_balancing/</guid>
+      <description>LoadBalancing Load balancing (Server Load Balance) means to balance and distribute the load (work tasks) to multiple operating units for execution, so that the entire system can complete the task together.
+Load balancing provides a cheap and effective method to expand the bandwidth of network devices and servers, increase throughput, enhance network data processing capabilities, and improve network flexibility and availability. According to the different implementation purposes of load balancing, load balancing can be divided into two types.</description>
+    </item>
+    
+    <item>
       <title>CDN_Cache_Cluster_communication</title>
       <link>https://songkou.github.io/posts/cdn_cache_cluster_communication/</link>
       <pubDate>Mon, 16 May 2022 12:29:04 +0800</pubDate>
@@ -25,31 +35,6 @@ import re # convert the {name} test to rules in predefined format in macros def 
       <guid>https://songkou.github.io/posts/cdn_cache_cluster_communication/</guid>
       <description>Cache Cluster Communication The main goal of collaborative interaction within the Cache server cluster is to establish a good communication channel between each server node, communicate in a timely manner about the content cache on the server, and provide users with a good service experience through collaboration between servers in the cluster.
 Communication between Cache server clusters can be divided into two categories: loose coupling and tight coupling. Among them, loosely coupled Cache communication protocols based on network messages include: ICP, HTCP, Cache Digest, Cache Pre-filling, etc.</description>
-    </item>
-    
-    <item>
-      <title>Load_Balancing</title>
-      <link>https://songkou.github.io/posts/load_balancing/</link>
-      <pubDate>Sun, 20 Mar 2022 21:29:04 +0800</pubDate>
-      
-      <guid>https://songkou.github.io/posts/load_balancing/</guid>
-      <description>4.3 负载均衡技术的实现
-负载均衡（Server Load Balance），含义是将负载（工作任务）进行平衡、分摊到多个操作单元上进行执行，从而实现整个系统共同完成任务。
-负载均衡提供了一种廉价又有效的方法扩展网络设备和服务器的带宽、增加吞吐量、加强网络数据处理能力、提高网络的灵活性和可用性。根据负载均衡实施目的的不同，可以把负载均衡分为两种。一种是任务分担，大量的并发访问或数据流量分担到多台设备上分别处理，每台设备都完成一个相对完整的请求响应过程；另一种是协同计算，把一个重负载的计算任务分担到多台设备上做并行处理，各台设备处理结束后，将结果进行汇总计算。
-如前文所述，负载均衡的关键在于能够使任务负载在集群中的服务器上被尽可能均衡地承载，避免出现集群中某几台服务器超载而其他服务器闲置的情况。在实现了负载均衡的集群中，多台服务器通过网络连接在一起，通过在集群前端部署负载均衡设备，根据预先配置的均衡策略将用户请求在集群中分发，并维护服务器的可用性。负载均衡实现的示意图如图 4-3 所示。
-图 4-3 负载均衡实现示意图
-从图 4-3 中可以看出，负载均衡设备能够在服务器之前截获到客户端发来的用户请求，然后按照预先配置的负载均衡策略将其分发到合适的后端服务器上。因此，客户端发出的业务请求报文首先都要发送到负载均衡设备的 IP 地址上，因为该地址并不负责处理实际的业务操作，因此通常将该地址称为虚拟 IP 地址，而将后端真正的业务服务器称为真实服务器。负载均衡设备通过虚拟 IP 地址和客户端通信，再将负载合理地分配给真实服务器。
-在很长一段时间内，负载均衡主要是在 OSI 七层网络协议栈的第四层展开，而随着业务类型的日益丰富、用户精细化需求的不断提升和深度剖析技术的极大完善，基于第七层的负载均衡技术已逐渐成为主流。 4.3.1 负载均衡关键技术
-负载均衡的目标是合理地将用户请求分发到合适的服务器上，从而达到系统处理的最优方案，其关键技术包括：负载均衡分发、会话持续性保证、服务器健康检测等。
-1.负载均衡调度算法
-负载均衡调度算法的目标是将用户请求和相关流量高效、正确地分发到处于正常工作状态的服务器上，使得各台服务器尽可能地保持负载均衡。
-目前商用系统中已经使用了非常丰富的负载均衡调度算法，总体而言调度算法可以分为静态算法和动态算法两大类。静态算法是指按照预先设定的策略进行分发，而不考虑当前服务器的实际负载情况，其实现比较简单快捷。典型的静态算法包括轮询、加权轮询、随机、加权随机、基于源 IP 的 Hash、基于源 IP 端口的 Hash、基于目的 IP 的 Hash、基于 UDP 报文净荷的 Hash 等；动态算法能够根据各服务器实际运行中的负载情况进行连接分发，具有更优的均衡效果，典型的动态算法包括基于最小连接、基于加权最小连接、最小响应时间等。
-（1）轮询（Round Robin）：依次将请求分发到不同的服务器上，使得各台服务器平均分担用户的连接请求，该算法适用于集群中各服务器性能相当而无明显优劣差异的场景。
-（2）加权轮询（Weighted Round Robin）：依次将请求分发到不同的服务器上，其中权值大的分配较多请求，权值小的分配较少请求，该算法利用权值标识服务器间的性能差异，适用于各服务器间性能不一的场景。
-（3）随机（Random）：随机地将请求分发到不同的服务器上，从统计学角度看，调度的结果为各台服务器平均分担用户的连接请求，该算法适用于集群中各服务器性能相当而无明显优劣差异的场景。
-（4）加权随机（Weighted Random）：随机地将请求分发到不同的服务器上，从统计学角度看，调度的结果为各台服务器按照权值比重分担用户的连接请求，该算法适用于集群中各服务器性能存在差异的场景。
-（5）基于源 IP 的 Hash（Source IP Hashing）：通过一个 Hash 函数将来自同一个源 IP 地址的请求映射到一台服务器上，该算法适用于需要保证来自同一用户的请求被分发到同一台服务器的场景。
-（6）基于源 IP 端口的 Hash（Source IP and Source Port Hashing）：通过一个 Hash 函数将来自同一个源 IP 地址和源端口号的请求映射到一台服务器上，该算法适用于需要保证来自同一用户同一业务的请求被分发到同一台服务器的场景。</description>
     </item>
     
     <item>
