@@ -11,6 +11,10 @@ tags = ['HFT', 'LowLatency_Network']
 
 #### General Description of Exchange trading system architecture
 
+Business flow:
+
+![Business Flow](https://songkou.github.io/posts/low_latency_network_architecture/Low_Latency_System.jpg)
+
 
 Below is a very simple example of all the key components of a exchange trading system. Legacy system commonly run o a centralized server to process multiple tasks, and network is holding marketdata, order routing system, Clearing. 
 
