@@ -13,12 +13,13 @@ tags = ['HFT', 'LowLatency_Network']
 
 Business flow:
 
+Below is a very simple example of all the key components of a exchange trading system. Legacy system commonly run o a centralized server to process multiple tasks, and network is holding marketdata, order routing system, Clearing. 
+
+
 ![Business Flow](https://songkou.github.io/posts/low_latency_network_architecture/Low_Latency_System.png)
 
 
-Below is a very simple example of all the key components of a exchange trading system. Legacy system commonly run o a centralized server to process multiple tasks, and network is holding marketdata, order routing system, Clearing. 
-
-The lower the trading system is, the higher amount of orders it can handle. 
+The lower latency the trading system is, the higher amount of orders it can handle. 
 To me, in terms of the HFT firms, the most important thing is the lower the latency is, the higher chance you get the information and make the deal, which can make you a better advantage vs other trading firms. 
 
 ![Latency on Main US Trading Firms](https://songkou.github.io/posts/low_latency_network_architecture/Latency.jpg)
